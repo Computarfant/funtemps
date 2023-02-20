@@ -7,11 +7,6 @@ package funfacts
         sun, luna eller terra
 
   Sett inn alle Funfacts i en struktur
-  type FunFacts struct {
-      Sun []string
-      Luna []string
-      Terra []string
-  }
 */
 type FunFacts struct {
 	Sun   []string
@@ -26,18 +21,18 @@ func GetFunFacts(about string) []string {
 	switch about {
 	case "sun":
 		facts = []string{
-			"The temperature in the sun's core is 15 million Kelvin (15 million degrees Celsius)",
-			"The outer layer of the sun has a temperature of 5778 Kelvin (5778 degrees Celsius)",
+			"The temperature in the sun's core is ",            //15 million Kelvin
+			"The outer layer of the sun has a temperature of ", //5778 Kelvin
 		}
 	case "luna":
 		facts = []string{
-			"The temperature on the moon's surface at night is -183 degrees Celsius",
-			"The temperature on the moon's surface during the day is 106 degrees Celsius",
+			"The temperature on the moon's surface at night is ",       //-183 degrees Celsius
+			"The temperature on the moon's surface during the day is ", //106 degrees Celsius
 		}
 	case "terra":
 		facts = []string{
-			"The highest temperature ever recorded on Earth's surface is 134 degrees Fahrenheit (56.7 degrees Celsius)",
-			"The lowest temperature ever recorded on Earth's surface is -89.4 degrees Fahrenheit",
+			"The highest temperature ever recorded on Earth's surface is ", //134 degrees Fahrenheit
+			"The lowest temperature ever recorded on Earth's surface is ",  //-89.4 degrees Fahrenheit
 		}
 	}
 
